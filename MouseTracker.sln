@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35818.85 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MouseTrackerAPI", "MouseTrackerAPI\MouseTrackerAPI.csproj", "{857AC2A6-F8CD-43DD-935F-204325FA694F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MouseTracker.Application", "Application\MouseTracker.Application.csproj", "{A13A2F10-8C69-4CAB-AEDA-57B8B247EE19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MouseTracker.Domain", "MouseTracker.Domain\MouseTracker.Domain.csproj", "{21FFADD5-304B-4453-AB8C-42D1616DFCD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MouseTracker.Infrastructure", "MouseTracker.Infrastructure\MouseTracker.Infrastructure.csproj", "{76B7F0D5-DBE3-46A0-A216-F365449132B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MouseTracker.Tests", "MouseTrackerTests\MouseTracker.Tests.csproj", "{5D1C78CD-567D-47B4-AA00-7CFCE1EC5D79}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2C2D67E3-1EDF-46AE-AB66-F0F8C34439BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{857AC2A6-F8CD-43DD-935F-204325FA694F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{857AC2A6-F8CD-43DD-935F-204325FA694F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{857AC2A6-F8CD-43DD-935F-204325FA694F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{857AC2A6-F8CD-43DD-935F-204325FA694F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A13A2F10-8C69-4CAB-AEDA-57B8B247EE19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A13A2F10-8C69-4CAB-AEDA-57B8B247EE19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A13A2F10-8C69-4CAB-AEDA-57B8B247EE19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A13A2F10-8C69-4CAB-AEDA-57B8B247EE19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21FFADD5-304B-4453-AB8C-42D1616DFCD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21FFADD5-304B-4453-AB8C-42D1616DFCD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21FFADD5-304B-4453-AB8C-42D1616DFCD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21FFADD5-304B-4453-AB8C-42D1616DFCD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76B7F0D5-DBE3-46A0-A216-F365449132B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76B7F0D5-DBE3-46A0-A216-F365449132B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76B7F0D5-DBE3-46A0-A216-F365449132B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76B7F0D5-DBE3-46A0-A216-F365449132B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D1C78CD-567D-47B4-AA00-7CFCE1EC5D79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D1C78CD-567D-47B4-AA00-7CFCE1EC5D79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D1C78CD-567D-47B4-AA00-7CFCE1EC5D79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D1C78CD-567D-47B4-AA00-7CFCE1EC5D79}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{857AC2A6-F8CD-43DD-935F-204325FA694F} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{A13A2F10-8C69-4CAB-AEDA-57B8B247EE19} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{21FFADD5-304B-4453-AB8C-42D1616DFCD5} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{76B7F0D5-DBE3-46A0-A216-F365449132B3} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{5D1C78CD-567D-47B4-AA00-7CFCE1EC5D79} = {2C2D67E3-1EDF-46AE-AB66-F0F8C34439BE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E147D3F-96A3-4C11-BB36-6FD664495242}
+	EndGlobalSection
+EndGlobal

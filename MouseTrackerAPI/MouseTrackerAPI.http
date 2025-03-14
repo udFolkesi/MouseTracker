@@ -1,0 +1,6 @@
+@MouseTrackerAPI_HostAddress = http://localhost:5117
+
+GET {{MouseTrackerAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
