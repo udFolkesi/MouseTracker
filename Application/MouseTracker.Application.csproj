@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MouseTracker.Infrastructure\MouseTracker.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

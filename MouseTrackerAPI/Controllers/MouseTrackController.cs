@@ -1,13 +1,21 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MouseTracker.Application.Services;
+using MouseTracker.Application.Services.Abstractions;
 
 namespace MouseTrackerAPI.Controllers
 {
+    [Route("api/[controller]")]
     [ApiController]
-    public class MouseTrackController : Controller
+    public class MouseTrackController(IMouseTrackService mouseTrackService) : ControllerBase
     {
-        public IActionResult Index()
+        [HttpPost("save")]
+        public async Task<IActionResult> SaveMouseTrack([FromBody] string jsonData)
         {
-            return View();
+            if (string.IsNullOrEmpty(jsonData))
+                return BadRequest("Invalid data");
+
+            await mouseTrackService.SaveMouseTrackAsync(jsonData);
+            return Ok("Data saved");
         }
     }
 }

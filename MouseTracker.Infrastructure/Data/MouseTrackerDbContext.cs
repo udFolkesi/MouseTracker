@@ -1,13 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.EntityFrameworkCore;
+using MouseTracker.Domain.Entities;
 
 namespace MouseTracker.Infrastructure.Data
 {
-    public class MouseTrackerDbContext
+    public class MouseTrackerDbContext: DbContext
     {
+        public MouseTrackerDbContext(DbContextOptions<MouseTrackerDbContext> options) : base(options)
+        {
+        }
 
+        public DbSet<MouseTrack> MouseTracks { get; set; }
     }
 }

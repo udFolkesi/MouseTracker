@@ -4,7 +4,7 @@ namespace MouseTracker.Domain.Entities
 {
     public class MouseTrack: BaseEntity
     {
-        public int X { get; set; }
-        public int Y { get; set; }
+        public string Data { get; set; } = string.Empty;
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
 }
