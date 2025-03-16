@@ -1,5 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using MouseTracker.Domain.Entities;
+﻿using MouseTracker.Domain.Entities;
 using MouseTracker.Infrastructure.Data;
 using MouseTracker.Infrastructure.Repositories.Abstractions;
 

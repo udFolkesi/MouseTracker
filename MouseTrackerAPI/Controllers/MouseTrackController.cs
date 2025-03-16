@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MouseTracker.Application.DTO;
-using MouseTracker.Application.Services;
 using MouseTracker.Application.Services.Abstractions;
 using System.Text.Json;
 

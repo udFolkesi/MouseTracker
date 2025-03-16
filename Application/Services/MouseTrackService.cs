@@ -1,7 +1,6 @@
 ﻿using MouseTracker.Application.DTO;
 using MouseTracker.Application.Services.Abstractions;
 using MouseTracker.Domain.Entities;
-using MouseTracker.Infrastructure.Repositories;
 using MouseTracker.Infrastructure.Repositories.Abstractions;
 using System.Text.Json;
 

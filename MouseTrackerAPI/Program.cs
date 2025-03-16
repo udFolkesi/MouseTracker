@@ -5,7 +5,6 @@ using MouseTracker.Application.Services.Abstractions;
 using MouseTracker.Infrastructure.Data;
 using MouseTracker.Infrastructure.Repositories.Abstractions;
 using MouseTracker.Infrastructure.Repositories;
-using System.Diagnostics;
 using MouseTracker.Domain.Entities;
 
 namespace MouseTrackerAPI
@@ -37,12 +36,9 @@ namespace MouseTrackerAPI
             if (app.Environment.IsDevelopment())
             {
                 app.MapOpenApi();
-
             }
 
             app.UseHttpsRedirection();
-
-            //app.MapControllers();
 
             app.UseDefaultFiles();
             app.UseStaticFiles();
