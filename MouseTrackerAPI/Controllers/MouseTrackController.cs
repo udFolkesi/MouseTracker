@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MouseTracker.Application.DTO;
 using MouseTracker.Application.Services;
 using MouseTracker.Application.Services.Abstractions;
+using System.Text.Json;
 
 namespace MouseTrackerAPI.Controllers
 {
@@ -9,13 +11,24 @@ namespace MouseTrackerAPI.Controllers
     public class MouseTrackController(IMouseTrackService mouseTrackService) : ControllerBase
     {
         [HttpPost("save")]
-        public async Task<IActionResult> SaveMouseTrack([FromBody] string jsonData)
+        public async Task<IActionResult> SaveMouseTrack([FromBody] List<MouseMovementDto> mouseMovements)
         {
-            if (string.IsNullOrEmpty(jsonData))
-                return BadRequest("Invalid data");
+            try
+            {
+                if (mouseMovements == null || mouseMovements.Count == 0)
+                    return BadRequest("Mouse movement data is required.");
 
-            await mouseTrackService.SaveMouseTrackAsync(jsonData);
-            return Ok("Data saved");
+                await mouseTrackService.SaveMouseTrackAsync(mouseMovements);
+                return Ok(new { message = "Data saved successfully" });
+            }
+            catch (JsonException ex)
+            {
+                return BadRequest(new { error = "Invalid JSON format", details = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { error = "An unexpected error occurred", details = ex.Message });
+            }
         }
     }
 }

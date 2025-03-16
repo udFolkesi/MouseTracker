@@ -7,15 +7,15 @@ namespace MouseTracker.Infrastructure.Repositories
 {
     public class MouseTrackRepository : IBaseRepository<MouseTrack>
     {
-        private readonly MouseTrackerDbContext dbContext;
+        private readonly MouseTrackerDbContext _dbContext;
         public MouseTrackRepository(MouseTrackerDbContext context)
         {
-            dbContext = context;
+            _dbContext = context;
         }
         public async Task AddAsync(MouseTrack entity)
         {
-            await dbContext.AddAsync(entity);
-            await dbContext.SaveChangesAsync();
+            await _dbContext.AddAsync(entity);
+            await _dbContext.SaveChangesAsync();
         }
     }
 }

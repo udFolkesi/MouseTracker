@@ -12,8 +12,8 @@ using MouseTracker.Infrastructure.Data;
 namespace MouseTracker.Infrastructure.Migrations
 {
     [DbContext(typeof(MouseTrackerDbContext))]
-    [Migration("20250315204211_initialcreate")]
-    partial class initialcreate
+    [Migration("20250316101758_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

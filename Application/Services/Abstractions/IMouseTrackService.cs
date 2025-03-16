@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MouseTracker.Application.DTO;
 
 namespace MouseTracker.Application.Services.Abstractions
 {
     public interface IMouseTrackService
     {
-        Task SaveMouseTrackAsync(string jsonData);
+        Task SaveMouseTrackAsync(List<MouseMovementDto> mouseMovements);
     }
 }
